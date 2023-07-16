@@ -55,5 +55,4 @@ router
     security.checkUserScope(security.scope.WRITE_CUSTOMER_GROUPS),
     deleteGroup
   )
-
 export default router

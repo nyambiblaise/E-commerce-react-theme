@@ -19,7 +19,6 @@ const config = {
 
   // Access-Control-Allow-Origin
   storeBaseUrl: `http://localhost:3000`,
-
   // used by API
   adminLoginUrl: "/admin/login",
 

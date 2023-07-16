@@ -6,5 +6,4 @@ const config = {
   apiWebSocketUrl: "ws://localhost:3001",
   developerMode: true,
 }
-
 export default config

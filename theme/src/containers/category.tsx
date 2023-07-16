@@ -22,7 +22,6 @@ const getFilterAttributesSummary = productFilter => {
   }
   return attributesSummary
 }
-
 const getFilterPriceSummary = (productFilter, settings) => {
   let priceSummary = ""
   if (productFilter.priceFrom > 0 && productFilter.priceTo > 0) {
