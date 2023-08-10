@@ -8,6 +8,7 @@ import Sort from "../components/sort"
 import * as helper from "../lib/helper"
 import { text, themeSettings } from "../lib/settings"
 
+
 const getFilterAttributesSummary = productFilter => {
   let attributesSummary = ""
   if (productFilter.attributes) {
