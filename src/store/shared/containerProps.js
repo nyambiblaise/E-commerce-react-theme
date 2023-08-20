@@ -136,7 +136,6 @@ export const mapDispatchToProps = (dispatch, ownProps) => {
           query[queryKey] = undefined
         }
       }
-
       setQuery(ownProps.history, query)
     },
     setLocation: path => {
