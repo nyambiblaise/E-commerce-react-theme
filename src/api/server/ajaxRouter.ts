@@ -14,7 +14,6 @@ import SettingsService from "./services/settings/settings"
 
 // cost factor for hashes
 const { saltRounds } = serverSettings
-
 const ajaxRouter = express.Router()
 const TOKEN_PAYLOAD = { email: "store", scopes: ["admin"] }
 const STORE_ACCESS_TOKEN = jwt.sign(TOKEN_PAYLOAD, serverSettings.jwtSecretKey)
@@ -22,7 +21,13 @@ const STORE_ACCESS_TOKEN = jwt.sign(TOKEN_PAYLOAD, serverSettings.jwtSecretKey)
 const api = new CezerinClient({
   apiBaseUrl: serverSettings.apiBaseUrl,
   apiToken: STORE_ACCESS_TOKEN,
-})
+});
+const getData = ()=>{
+  let apiUrl = "";
+  return (req:Request, res:Response)=>({
+
+  })
+}
 
 const DEFAULT_CACHE_CONTROL = "public, max-age=60"
 const PRODUCTS_CACHE_CONTROL = "public, max-age=60"
