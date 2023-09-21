@@ -22,6 +22,7 @@ const api = new CezerinClient({
   apiBaseUrl: serverSettings.apiBaseUrl,
   apiToken: STORE_ACCESS_TOKEN,
 });
+
 const getData = ()=>{
   let apiUrl = "";
   return (req:Request, res:Response)=>({
