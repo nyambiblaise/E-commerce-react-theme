@@ -24,6 +24,7 @@ const addOrder = (req: Request, res: Response, next: NextFunction) =>
     .then(data => res.send(data))
     .catch(next)
 
+
 const updateOrder = (req: Request, res: Response, next: NextFunction) =>
   OrdersService.updateOrder(req.params.id, req.body)
     .then(data => (data ? res.send(data) : res.status(404).end()))
