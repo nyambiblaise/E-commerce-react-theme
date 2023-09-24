@@ -30,6 +30,7 @@ const updateOrder = (req: Request, res: Response, next: NextFunction) =>
     .then(data => (data ? res.send(data) : res.status(404).end()))
     .catch(next)
 
+
 const deleteOrder = (req: Request, res: Response, next: NextFunction) =>
   OrdersService.deleteOrder(req.params.id)
     .then(data => res.status(data ? 200 : 404).end())
