@@ -40,7 +40,6 @@ interface cookieOptions {
   secure: boolean
   sameSite: "strict"
 }
-
 const getCartCookieOptions = (isHttps: boolean): cookieOptions => ({
   maxAge: 24 * 60 * 60 * 1000, // 24 hours
   httpOnly: true,
