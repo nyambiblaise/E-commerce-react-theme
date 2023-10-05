@@ -8,7 +8,6 @@ const REGULAR_URL = "www.paypal.com"
 
 const getPaymentFormSettings = options => {
   const { gateway, gatewaySettings, order, amount, currency } = options
-
   const formSettings = {
     order_id: order.id,
     amount: amount,
