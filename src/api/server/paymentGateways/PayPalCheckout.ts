@@ -27,6 +27,7 @@ const paymentNotification = options => {
   const { gateway, gatewaySettings, req, res } = options
   const settings = { allow_sandbox: true }
   const params = req.body
+
   const orderId = params.custom
   const paymentCompleted = params.payment_status === "Completed"
 
