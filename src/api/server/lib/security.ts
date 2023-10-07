@@ -99,6 +99,7 @@ const applyMiddleware = app => {
 
 const getAccessControlAllowOrigin = () => settings.storeBaseUrl || "*"
 
+
 export default {
   checkUserScope,
   scope,
